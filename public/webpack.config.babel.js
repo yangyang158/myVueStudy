@@ -51,6 +51,14 @@ let config = {
         }, {
             test: /\.css$/,
             use: [MiniCssExtractPlugin.loader, 'css-loader']
+        }, {
+            test: /\.less$/,
+            use: [MiniCssExtractPlugin.loader, 'css-loader', {
+                loader: 'less-loader',
+                options: {
+                    strictMath: true,
+                }
+            }],
         }]
     },
     devServer: {

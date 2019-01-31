@@ -1,0 +1,25 @@
+#document-page{
+    padding: 0 20px;
+    text-align: left;
+    & span.red{
+        color: red;
+    }
+    & .content_box{
+        margin-bottom: 20px;
+    }
+    & .content_box .detail{
+        padding: 2px 20px;
+    }
+    & .content_box .detail.border{
+        border: 1px solid #ccc;
+    }
+}
+
+#document-page{
+    & .fade-enter, & .fade-leave-to{
+        opacity: 0;
+    }
+    & .fade-enter-active, & .fade-leave-active {
+        transition: opacity 2s
+    }
+} 
