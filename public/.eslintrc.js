@@ -40,9 +40,13 @@ module.exports = {
         'no-multi-spaces': 'error',//不允许重复使用分隔空格
         'no-multiple-empty-lines': 'error',//禁止出现多行空行（最多两行）
         'quotes': [2, 'single'],// js中使用单引号
+        'semi': ['error', 'always'],
+        'eol-last': ['error', 'never'],//要求或禁止文件末尾保留一行空行 (eol-last)
+        "comma-dangle": ["error", "only-multiline"],//要求使用拖尾逗号
 
         // Vue相关校验规则
         "vue/script-indent": ["error", 4,]
 
     },
 };
+           

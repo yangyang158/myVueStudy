@@ -4,4 +4,4 @@ export default {
         option: { default: [], type: Array },
         radioModel: { default: '' }
     }
-}
+};

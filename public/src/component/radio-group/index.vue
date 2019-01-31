@@ -5,7 +5,6 @@
                 name="radio-data"
                 type="radio"
                 v-bind:value="opt.value"
-                v-model="radioModel"
                 v-on:change="$emit('input', $event.target.value)"
             />
             <span>{{opt.label}}</span>

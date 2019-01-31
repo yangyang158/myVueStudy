@@ -1,11 +1,11 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './home/index.vue'
-import Document from './document/index.vue'
-import ComponentList from './component/component-list.js'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Home from './home/index.vue';
+import Document from './document/index.vue';
+import ComponentList from './component/component-list.js';
 
-Vue.use(Router)
-Vue.use(ComponentList)
+Vue.use(Router);
+Vue.use(ComponentList);
 
 export default new Router({
     routes: [{
@@ -20,4 +20,4 @@ export default new Router({
         path: '/',
         redirect: '/home'
     }]
-})
+});

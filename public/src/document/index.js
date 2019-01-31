@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import _ from 'lodash';
 
 export default {
     name: 'Document',
@@ -68,41 +68,41 @@ export default {
                 value: 'female',
                 label: '女'
             }]
-        }
+        };
     },
     methods: {
         clickMe: function (e) {
-            this.count--
+            this.count--;
         },
         clickMeDouble: function (e) {
-            this.count = this.count + 2
+            this.count = this.count + 2;
         },
         abTotal: function () {
-            console.log('----')
-            return _.toNumber(this.value_a) + _.toNumber(this.value_b)
+            console.log('----');
+            return _.toNumber(this.value_a) + _.toNumber(this.value_b);
         },
         submitForm: function () {
-            console.log('formDetail', this.formDetail)
+            console.log('formDetail', this.formDetail);
         },
-        asd: function(p1, p2){
-            console.log(p1,p2)
+        asd: function (p1, p2) {
+            console.log(p1, p2);
         }
     },
     watch: {
         value_a: function (newValue, oldValue) {
-            console.log('newValue', newValue)
-            console.log('oldValue', oldValue)
-            this.aSubb = newValue - this.value_b
+            console.log('newValue', newValue);
+            console.log('oldValue', oldValue);
+            this.aSubb = newValue - this.value_b;
         },
         value_b: function (newValue, oldValue) {
-            console.log('newValue', newValue)
-            console.log('oldValue', oldValue)
-            this.aSubb = this.value_a - newValue
+            console.log('newValue', newValue);
+            console.log('oldValue', oldValue);
+            this.aSubb = this.value_a - newValue;
         }
     },
     computed: {
         aMultiplyb: function () {
-            return this.value_a * this.value_b
+            return this.value_a * this.value_b;
         }
     }
-}
+};
