@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Date: <%= htmlWebpackPlugin.options.banner.date %> -->
+<!-- Tag: <%= htmlWebpackPlugin.options.banner.tag %> -->
+<!-- Branch: <%= htmlWebpackPlugin.options.banner.branch %> -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta id="viewport" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="renderer" content="webkit">
+    <title><%= htmlWebpackPlugin.options.title || '' %></title>
+</head>
+<body>
+    <script>
+        window.INIT_DATA_LOADED = new Date();
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?3b3ee0f85b41bfa5ef909b9eaf6c4085";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+</html>

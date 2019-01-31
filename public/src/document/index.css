@@ -1,0 +1,16 @@
+#document-page{
+    padding: 0 20px;
+    text-align: left;
+}
+#document-page span.red{
+    color: red;
+}
+#document-page .content_box{
+    margin-bottom: 20px;
+}
+#document-page .content_box .detail{
+    padding: 2px 20px;
+}
+#document-page .content_box .detail.border{
+    border: 1px solid #ccc;
+}
