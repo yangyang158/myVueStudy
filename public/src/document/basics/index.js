@@ -5,6 +5,8 @@ export default {
     data () {
         return {
             titleMsg: '我是title',
+            isTrue: true,
+            htmlTemplate: '<h1>我是v-html</h1>',
             changeColor: false,
             hrefUrl: 'https://www.baidu.com',
             type: 'A',

@@ -1,25 +1,13 @@
 #document-page{
-    padding: 0 20px;
-    text-align: left;
-    & span.red{
-        color: red;
+    .menus{
+        width: 200px;
+        height: calc(100vh - 60px);
+        display: inline-block;
+        vertical-align: top;
     }
-    & .content_box{
-        margin-bottom: 20px;
-    }
-    & .content_box .detail{
-        padding: 2px 20px;
-    }
-    & .content_box .detail.border{
-        border: 1px solid #ccc;
+    .content{
+        width: calc(100% - 210px);
+        display: inline-block;
+        height: calc(100vh - 66px);
     }
 }
-
-#document-page{
-    & .fade-enter, & .fade-leave-to{
-        opacity: 0;
-    }
-    & .fade-enter-active, & .fade-leave-active {
-        transition: opacity 2s
-    }
-} 

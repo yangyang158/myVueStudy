@@ -16,11 +16,10 @@
 #app .menu li{
     display: inline-block;  
     margin: 0 20px;
-    line-height: 60px;
+    line-height: 59px;
 }
-#app .content{
-    height: calc(100vh - 71px);
-    padding-top: 10px;
+#app > .content{
+    height: calc(100vh - 60px);
 }
 #app .content > *{
     height: 100%;
