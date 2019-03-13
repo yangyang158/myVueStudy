@@ -4,6 +4,7 @@ import Home from './home/index.vue';
 import Document from './document/index.vue';
 import Basic from './document/basics/index.vue';
 import GlobalAPI from './document/global-api/index.vue';
+import InstanceAttr from './document/instance-attr/index.vue';
 
 import ComponentList from './component/component-list.js';
 import RegisterDirective from './register-directive.js';
@@ -28,6 +29,10 @@ export default new Router({
             path: '/document/globalAPI',
             name: 'GlobalAPI',
             component: GlobalAPI,
+        }, {
+            path: '/document/instance-attr',
+            name: 'InstanceAttr',
+            component: InstanceAttr,
         }]
     }, {
         path: '/',
