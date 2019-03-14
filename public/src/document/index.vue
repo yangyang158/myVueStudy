@@ -10,7 +10,9 @@
             <li><a href="#/document/instance-attr">vue实例属性</a></li>    
         </ul>  
         <div class="content">
-            <router-view />
+            <transition name="fade" mode="out-in">
+                <router-view />
+            </transition>
         </div>
     </div>
 </template>
