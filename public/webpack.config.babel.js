@@ -59,6 +59,17 @@ let config = {
                     strictMath: true,
                 }
             }],
+        }, {
+            test: /\.(png|jpg|gif)(\?[a-z0-9\-=]+)?$/,
+            loader: 'url-loader?limit=8192',
+        },
+        {
+            test: /\.(svg?)(\?[a-z0-9]+)?$/,
+            loader: 'file-loader'
+        },
+        {
+            test: /\.(otf|ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+            loader: 'url-loader'
         }]
     },
     devServer: {

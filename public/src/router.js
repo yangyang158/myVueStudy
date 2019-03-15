@@ -10,6 +10,8 @@ import Basic from './document/basics/index.vue';
 import GlobalAPI from './document/global-api/index.vue';
 import InstanceAttr from './document/instance-attr/index.vue';
 
+import Pos from './pos/index.vue';
+
 import ComponentList from './component/component-list.js';
 import RegisterDirective from './register-directive.js';
 
@@ -63,7 +65,10 @@ export default new Router({
         component: News
     }, {
         path: '/',
-        redirect: '/home'
+        redirect: '/pos'
+    }, {
+        path: '/pos',
+        component: Pos
     }, {
         // 找不到页面时的配置
         path: '*',

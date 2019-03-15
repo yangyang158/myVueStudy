@@ -1,4 +1,5 @@
 <style scope>
+@import './css/iconfont.css';
 * {
     padding: 0;
     margin: 0;
@@ -46,6 +47,7 @@
             <router-link :to="{name:'Home',params:{position:'前端开发', name: 'candy'}}">主页</router-link>
             <router-link to="/document">文档</router-link>
             <router-link to="/news/sport/1234">新闻</router-link>
+            <router-link to="/pos">demo</router-link>
         </ul>
         <div class="content">
             <transition name="fade" mode="out-in">
@@ -58,6 +60,8 @@
 </template>
 
 <script>
+
+
 export default {
   name: 'App'
 }
