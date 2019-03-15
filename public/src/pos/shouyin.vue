@@ -93,9 +93,8 @@
                             </el-table-column>
                         </el-table>   
                         <div class="operate">
-                            <el-button type="warning" >挂单</el-button>
                             <el-button type="danger" @click="deleteOrder('all')">全部删除</el-button>
-                            <el-button type="success" >结账</el-button>
+                            <el-button type="success" @click="checkout">结账</el-button>
                         </div>
                     </el-tab-pane>
                     <el-tab-pane label="挂单">
@@ -193,6 +192,19 @@ export default {
             }, 0)
             let countTotal = _.sum(_.map(this.tableData, 'count'));
             return ['合计', countTotal, priceTotal]
+        },
+        checkout: function(){
+            //结账
+            if(this.tableData.length === 0){
+                return this.$message({
+                    message: '请先选择商品',
+                    type: 'warning'
+                });
+            }
+            this.$message({
+                    message: '结账成功',
+                    type: 'success'
+                });
         }
     }
 
